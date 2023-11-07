@@ -1,0 +1,367 @@
+*{
+    box-sizing:border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page{
+    display: block;
+}
+
+.conteneur-en-tete{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titre{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.titre i{
+    font-size: 2em;
+}
+
+.titre>*{
+    margin: 2px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    /*flex-wrap: wrap; */   
+}
+
+.navigation ul li{
+    margin: 4px;
+}
+
+.navigation ul li a{
+    color: black;
+}
+
+.navigation ul li a:hover{
+    color: orange;
+}
+
+.conteneur-baniere{
+    background-color: rgb(46, 155, 155);
+}
+
+.baniere{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.baniere h1 span, .titre-section .titre-section-1 h1 span{
+    color: orange;
+    font-size: 1em;
+    align-items: center;
+}
+
+.baniere p{
+    color: white;
+    margin-top: 15px;
+}
+
+.section1{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.ajouts, .titre-section, .articles, .titre-article1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.elements ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.elements ul li{
+    background: gray;
+    border-radius: 6px;
+    margin-right: 10px;
+    padding: 8px 3px;
+}
+
+.elements ul li a{
+    color: white;
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+.elements ul li a:hover{
+    color: orange;
+}
+
+.rechercher input::placeholder{
+    font-size: 1.em;
+}
+
+.rechercher *{
+    padding: 6px 3px;
+    border-radius: 6px;
+}
+.rechercher a{
+    border: solid 2px blue;
+    color: blue;
+}
+
+.rechercher a:hover{
+    border: solid 2px orange;
+    color: orange;
+}
+
+.chemin{
+    background: gray;
+    padding: 10px 0px;
+}
+
+.chemin ul{
+    display: flex;
+    justify-content: start;
+    /*flex-wrap: wrap;*/
+}
+
+.chemin ul li{
+    margin-right: 10px;
+    padding: 8px 3px;
+}
+
+.chemin ul li a{
+    color: white;
+    font-size: 1.5em;
+}
+
+.chemin ul li a:hover{
+    color: orange;
+}
+
+.titre-section .titre-section-1 {
+    padding-left: 20%;
+}
+
+.titre-section .titre-section-2{
+    margin-top: 10px;
+}
+
+.titre-section .titre-section-2 a{
+    border: solid black 2px;
+    padding: 8px ;
+    color: black;
+}
+
+.titre-section .titre-section-2 a:hover{
+    border: solid orange 2px;
+    color: orange;
+}
+
+.titre-section .titre-section-2 a i{
+    margin-right: 5px;
+}
+
+.articles .article1{
+    flex: 1.1;
+    margin-right: 80px ;
+}
+
+.titre-article1{
+    display: flex;
+    justify-content: end;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.articles .article1 .titre-article1 .text-titre-article1{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.articles .article1 .titre-article1 .prix-article1{
+    font-size: 1.3em;
+    margin-left: 20px;
+    color: green;
+    margin-right: 10px;
+}
+
+.articles .article1 .contenu-article1 ul li{
+    margin-top: 20px;
+}
+
+.articles .article1 .bouton1-article1{
+    margin-top: 20px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px
+}
+
+.articles .article1 .bouton1-article1 *{
+    color: white;
+    margin-right: 5px;
+}
+
+.articles .article1 .bouton2-article1{
+    margin-top: 20px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px
+}
+
+.articles .article1 .bouton2-article1 *{
+    color: white;
+    margin-right: 5px;
+}
+
+.articles .article1 a:hover{
+    color: orange;
+}
+
+.articles .article2{
+    flex: 2.0;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: solid black 2px;
+    box-shadow: 9px 7px 11px;
+}
+
+.articles .article2 .enf1-article2{
+    display:flex;
+    justify-content: left;
+    align-items: start;
+    font-size: 1.3em;
+}
+
+.articles .article2 .enf2-article2{
+    display:flex;
+    justify-content: space-around;
+    border-top: solid 2px black;
+    padding: 0px 0px;
+}
+
+.articles .article2 .enf2-article2 .java{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    padding: 30px 20px;
+    margin: 20px ;
+}
+.articles .article2 .enf2-article2 .java a{
+    color: white;
+    font-size: 3em;
+}
+
+.articles .article2 .enf2-article2 .python{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-9deg ,blue, orange);
+    border-radius: 50%;
+    padding: 5px 5px;
+    margin: 20px ;
+}
+
+.articles .article2 .enf2-article2 .python a{
+    color: white;
+    font-size: 2em;
+}
+
+
+.articles .article2 .enf2-article2 .html{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(212, 141, 9);
+    border-top-left-radius: 50%;
+    padding: 10px 20px;
+    margin: 20px ;
+}
+
+.articles .article2 .enf2-article2 .html a{
+    color: white;
+    font-size: 2em;
+}
+
+.articles .article2 .enf2-article2 .css{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    border-bottom-right-radius: 50%;
+    padding: 10px 20px;
+    margin: 20px ;
+}
+
+.articles .article2 .enf2-article2 .css a{
+    color: white;
+    font-size: 2em;
+}
+
+.articles .article2 .enf2-article2 .js{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border-bottom-right-radius: 50%;
+    padding: 10px 20px;
+    margin: 20px ;
+}
+
+.articles .article2 .enf2-article2 .js a{
+    color: white;
+    font-size: 2em;
+}
+
+
+.articles .article2 .enf3-article2 {
+    display:flex;
+    flex-direction: column;
+    padding: 0px 0px;
+}
+
+.articles .article2 .enf3-article2 label {
+    display:flex;
+}
+
+.articles .article2 .enf3-article2 textarea {
+    background: blue;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.articles .article2 .enf4-article2{
+    background: rgb(85, 170, 150);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
